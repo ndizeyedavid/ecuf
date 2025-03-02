@@ -1,14 +1,6 @@
 import { useState } from 'react';
 
-export function TeamMember({
-    name,
-    role,
-    description,
-    image,
-    email,
-    schedule,
-    bio,
-}) {
+export default function TeamMember({ name, role, description, image, email, schedule, bio, }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isScheduling, setIsScheduling] = useState(false);
 
